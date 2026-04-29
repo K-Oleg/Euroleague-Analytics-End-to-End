@@ -30,4 +30,4 @@ I analyzed the data to answer four critical questions:
 ## Contact
 I am open to opportunities where I can apply my analytical skills, design thinking, and sports domain knowledge.
 
-## View Interactive Portfolio Website ()
+## View Interactive Project Portfolio Webpage (https://k-oleg.github.io/Euroleague-Analytics-End-to-End)
