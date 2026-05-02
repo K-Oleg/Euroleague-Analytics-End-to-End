@@ -8806,3 +8806,62 @@ input, select, textarea {
     color: #303030;
 }
 /* END: BLOCK 3 (Research Insights) */
+
+/* START: BLOCK 4 (Executive Summary) */
+.summary-section {
+    margin-bottom: 150px; /* Отступ между блоками 150px */
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0;
+    gap: 50px;
+}
+
+.summary-q {
+    flex: 1;
+    position: relative;
+    padding-left: 25px;
+}
+
+.summary-q .dot {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background-color: #E85915; /* Accent color */
+    border-radius: 50%;
+}
+
+.summary-q strong {
+    font-size: 24px;
+    color: #303030;
+}
+
+.summary-q p {
+    font-size: 20px;
+    color: #303030;
+    margin-top: 5px;
+}
+
+.summary-a {
+    flex: 1.2;
+}
+
+.summary-a p {
+    font-size: 22px; /* Чуть крупнее для акцента на выводе */
+    line-height: 1.4;
+    color: #303030;
+}
+
+/* Твой Divider из ТЗ */
+.accent-divider {
+    width: 80%; /* 80% screen */
+    border: 0;
+    border-top: 1px solid #E85915; /* line thickness 1px, accent color */
+    margin: 30px auto; /* Центрирование */
+}
+/* END: BLOCK 4 (Executive Summary) */
