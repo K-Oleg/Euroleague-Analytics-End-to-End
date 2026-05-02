@@ -8617,6 +8617,12 @@ input, select, textarea {
     padding: 0 50px; /* Отступ 50px лево/право */
 }
 
+/* START: BLOCK 1 (Hero Section) Fix */
+
+.hero-section.container {
+    padding-right: 0; /* Убираем правый отступ контейнера */
+}
+
 .hero-section {
     padding-top: 50px;
     margin-bottom: 150px; /* Отступ между блоками 150px */
@@ -8635,23 +8641,26 @@ input, select, textarea {
 .hero-flex {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Текст слева, баннер справа */
-    gap: 50px;
+    justify-content: flex-end; /* Выравниваем контент по правому краю */
+    width: 100%;
 }
 
 .hero-text-content {
-    flex: 0 1 auto;
+    flex: 1; /* Текст забирает свободное место слева */
+    padding-left: 0; 
 }
 
 .hero-banner {
-    flex: 0 0 auto;
+    flex: 0 0 auto; /* Баннер сохраняет свой размер[cite: 2] */
+    margin-right: 0; /* Обнуляем любые внешние отступы */
 }
 
 .banner-img {
-    width: 850px; /* Фиксированная ширина чертежа для десктопа */
-    height: auto;
     display: block;
-
+    width: 1000px; /* Установи ширину, которая тебе нужна в мокапе[cite: 2] */
+    height: auto;
+    object-fit: cover;
+    object-position: right; /* Сдвигаем само изображение внутри тега вправо */
 }
 
 /* Стили вопросов (Текст #303030, Буллиты #E85915) */
