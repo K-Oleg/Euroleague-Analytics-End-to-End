@@ -8617,6 +8617,8 @@ input, select, textarea {
     padding: 0 50px; /* Отступ 50px лево/право */
 }
 
+
+
 /* START: BLOCK 1 (Hero Section) Fix */
 
 .hero-section.container {
@@ -8641,7 +8643,9 @@ input, select, textarea {
 .hero-flex {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Выравниваем контент по правому краю */
+    /* justify-content здесь не будет играть роли из-за flex: 1 у текста, 
+       но оставим для структуры */
+    justify-content: space-between; 
     width: 100%;
 }
 
@@ -8657,10 +8661,11 @@ input, select, textarea {
 
 .banner-img {
     display: block;
-    width: 1000px; /* Установи ширину, которая тебе нужна в мокапе[cite: 2] */
+    width: 1000px; 
     height: auto;
-    object-fit: cover;
-    object-position: right; /* Сдвигаем само изображение внутри тега вправо */
+    /* Убираем object-fit и position, чтобы картинка 
+       просто отображалась как есть и прижималась краем */
+    margin-left: auto; 
 }
 
 /* Стили вопросов (Текст #303030, Буллиты #E85915) */
