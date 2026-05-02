@@ -8865,3 +8865,58 @@ input, select, textarea {
     margin: 30px auto; /* Центрирование */
 }
 /* END: BLOCK 4 (Executive Summary) */
+
+/* START: BLOCK 5 (About the Author) */
+.about-author-section {
+    background-color: #EFEFEF; /* Last section BG color */
+    padding: 100px 0; /* Padding top and bottom 100px */
+    margin-bottom: 0; /* Это последний блок, отступ снизу не нужен */
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравнивание всего контента по центру */
+    text-align: center;
+}
+
+.about-quote {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px; /* Чуть крупнее стандартного p для цитаты */
+    font-weight: 400;
+    color: #303030;
+    max-width: 900px; /* Ограничиваем ширину, чтобы цитата выглядела аккуратно */
+    line-height: 1.6;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+/* Добавим небольшие кавычки акцентного цвета для стиля */
+.about-quote::before {
+    content: '"';
+    color: #E85915;
+    font-size: 40px;
+    position: absolute;
+    left: -30px;
+    top: -10px;
+}
+
+.author-info {
+    display: inline-block;
+}
+
+.author-name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 34px; /* H2 - 34 Px */
+    font-weight: 400;
+    color: #303030;
+    margin-bottom: 5px;
+}
+
+.author-line {
+    width: 100%;
+    height: 3px; /* Подчеркивание имени */
+    background-color: #E85915; /* Accent color */
+    margin: 0 auto;
+}
+/* END: BLOCK 5 (About the Author) */
