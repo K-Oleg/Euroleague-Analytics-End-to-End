@@ -1,11 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 
-/*
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -8627,6 +8622,12 @@ input, select, textarea {
     margin-bottom: 150px; /* Отступ между блоками 150px */
 }
 
+.main-logo {
+    height: 61px; /* Было 40px, поставь 30px или меньше для уменьшения */
+    width: auto;  /* Ширина подстроится автоматически, чтобы не искажать пропорции */
+    display: block;
+}
+
 .logo-wrapper {
     margin-bottom: 60px;
 }
@@ -8695,6 +8696,11 @@ input, select, textarea {
     margin-bottom: 150px; /* Отступ между блоками 150px */
 }
 
+.tech-stack-section h1 {
+    margin-bottom: 40px; /* Строго по ТЗ */
+    text-align: center;
+}
+
 .block-title {
     font-family: 'Open Sans', sans-serif;
     font-size: 40px;
@@ -8708,7 +8714,7 @@ input, select, textarea {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 30px; /* Расстояние между колонками */
+    gap: 60px; /* Расстояние между колонками */
 }
 
 .tech-item {
@@ -8750,6 +8756,10 @@ input, select, textarea {
 /* START: BLOCK 3 (Research Insights) */
 .research-section {
     margin-bottom: 150px; /* Отступ между блоками 150px */
+}
+
+.research-section h1 {
+    margin-bottom: 40px; /* Строго по ТЗ */
 }
 
 .insight-row {
@@ -8808,15 +8818,15 @@ input, select, textarea {
 /* END: BLOCK 3 (Research Insights) */
 
 /* START: BLOCK 4 (Executive Summary) */
-.summary-section {
-    margin-bottom: 150px; /* Отступ между блоками 150px */
+.summary-section h1 {
+    margin-bottom: 40px;
 }
 
 .summary-item {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px 0;
+    padding: 30px 0;
     gap: 50px;
 }
 
@@ -8862,7 +8872,7 @@ input, select, textarea {
     width: 80%; /* 80% screen */
     border: 0;
     border-top: 1px solid #E85915; /* line thickness 1px, accent color */
-    margin: 30px auto; /* Центрирование */
+    margin: 0 auto; /* Центрирование */
 }
 /* END: BLOCK 4 (Executive Summary) */
 
