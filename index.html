@@ -15,20 +15,158 @@
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
 
-				<!-- One -->
-				<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-    <div class="content">
-        <h1>Oleg Kushnir</h1>
-        <p class="major">Data Analyst | UI/UX Designer | Basketball Coach</p>
-        <p>Combining 20+ years of professional coaching with data analytics to decode elite sports performance.</p>
-        <ul class="actions stacked">
-            <li><a href="#first" class="button big wide smooth-scroll-middle">View Projects</a></li>
-        </ul>
+<!-- SECTION 1: HERO -->
+<section class="hero-section container">
+    <div class="logo-wrapper">
+        <img src="images/logox2.png" alt="Euroleague Analytics" class="main-logo">
     </div>
-    <div class="image">
-        <img src="images\mainBanner.png" alt="Euroleague Analytics Blueprint" />
+    
+    <div class="hero-flex">
+        <!-- Текст слева -->
+        <div class="hero-text-content">
+            <ul class="hero-questions">
+                <li class="question-item">
+                    <span class="bullet"></span>
+                    <strong>Home Court Advantage</strong>
+                    <p>Does Win Rate Increase Late in the Season?</p>
+                </li>
+                <li class="question-item">
+                    <span class="bullet"></span>
+                    <strong>Shooting Efficiency:</strong>
+                    <p>Do Leaders Peak Under Pressure?</p>
+                </li>
+                <li class="question-item">
+                    <span class="bullet"></span>
+                    <strong>PIR Forecasting:</strong>
+                    <p>Is Elite Team Efficiency Predictable?</p>
+                </li>
+                <li class="question-item">
+                    <span class="bullet"></span>
+                    <strong>Second Chance Points:</strong>
+                    <p>Do Leaders Dominate the Glass Late in the Season?</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Баннер справа -->
+        <div class="hero-banner">
+            <img src="images/bannerXDx2.png" alt="Basketball Court Tactical Drawing" class="banner-img">
+        </div>
     </div>
 </section>
+
+<!-- START: BLOCK 2 (Tech Stack) -->
+<section class="tech-stack-section container">
+    <h1 class="block-title">Tech Stack & Data Pipeline</h1>
+    
+    <div class="tech-grid">
+        <!-- Item 1 -->
+        <div class="tech-item">
+            <div class="icon-box">
+                <img src="images/googlesheets.svg" alt="Google Sheets" class="tech-icon">
+            </div>
+            <h2>Google Sheets</h2>
+            <p>Sourced and organized game-by-game data across 32 rounds, ensuring consistency before migration to a database.</p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="tech-item">
+            <div class="icon-box">
+                <img src="images/sql.svg" alt="SQL" class="tech-icon">
+            </div>
+            <h2>SQL</h2>
+            <p>Migrated data from Google Sheets to SQL for advanced joining of team metrics and round results.</p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="tech-item">
+            <div class="icon-box">
+                <img src="images/python.svg" alt="Python" class="tech-icon">
+            </div>
+            <h2>Python / Pandas</h2>
+            <p>Calculated the "Resilience Index" and performed time-series analysis to identify trends between the two halves of the season.</p>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="tech-item">
+            <div class="icon-box">
+                <img src="images/Power_Bi.svg" alt="Power BI" class="tech-icon">
+            </div>
+            <h2>Power BI</h2>
+            <p>Developed dynamic dashboards with DAX (CALCULATE, SUMX) to forecast performance and visualize confidence intervals.</p>
+        </div>
+    </div>
+</section>
+<!-- END: BLOCK 2 (Tech Stack) -->
+
+<!-- START: BLOCK 3 (Research Insights) -->
+<section class="research-section container">
+    <h1 class="block-title">Research Insights</h1>
+
+    <!-- Row 1: Home Court Advantage -->
+    <div class="insight-row">
+        <div class="insight-text">
+            <h2>Home Court Advantage: Stability or Randomness?</h2>
+            <p><span class="accent-label">Goal:</span> To evaluate the impact of "home-court advantage" and its evolution throughout the season.</p>
+            <p><span class="accent-label">Hypothesis:</span> In the second half of the season, as tournament pressure increases, teams play more aggressively at home and win more frequently.</p>
+            <p><span class="accent-label">Key Insight:</span> The hypothesis was partially confirmed. The overall league-wide home win rate dropped from <span class="accent-text">66% to 59%</span>; however, top-tier teams actually improved their performance.</p>
+        </div>
+        <div class="insight-image">
+            <!-- image_876efa.png -->
+            <img src="images/homeCourtAdv_colorBrand.jpg" alt="Home Court Advantage Chart">
+        </div>
+    </div>
+
+    <!-- Row 2: Shooting Efficiency (Reverse) -->
+    <div class="insight-row reverse">
+        <div class="insight-text">
+            <h2>Euroleague Shooting Efficiency Sustainability Analysis</h2>
+            <p><span class="accent-label">Goal:</span> To investigate shifts in shooting accuracy across teams of different tiers throughout the season.</p>
+            <p><span class="accent-label">Hypothesis:</span> Elite teams maintain or enhance their efficiency during the second half of the season, while lower-tier teams experience a decline.</p>
+            <p><span class="accent-label">Key Insight:</span> Leaders (Top 6) showed a <span class="accent-text">+3.0%</span> increase in 2-point efficiency under pressure, while others saw a sharp decline.</p>
+        </div>
+        <div class="insight-image">
+            <!-- image_876ec3.png -->
+            <img src="shooting-efficiency-chart.png" alt="Shooting Efficiency Chart">
+        </div>
+    </div>
+
+    <!-- Row 3: PIR Forecasting -->
+    <div class="insight-row">
+        <div class="insight-text">
+            <h2>Efficiency and Forecasting (PIR & Forecasting)</h2>
+            <p><span class="accent-label">Goal:</span> To identify the most efficient teams using the Performance Index Rating (PIR) and build a predictive model.</p>
+            <p><span class="accent-label">Hypothesis:</span> PIR dynamics allow for high-accuracy forecasting of a team's average efficiency in subsequent games.</p>
+            <p><span class="accent-label">Key Insight:</span> Time-series analysis revealed that <span class="accent-text">Top 6 teams</span> have a significantly narrower confidence interval, confirming their superior stability.</p>
+        </div>
+        <div class="insight-image">
+            <!-- image_876e84.jpg -->
+            <img src="pir-forecasting-chart.png" alt="PIR Forecasting Chart">
+        </div>
+    </div>
+</section>
+<!-- END: BLOCK 3 (Research Insights) -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 				<!-- Two -->
 				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">

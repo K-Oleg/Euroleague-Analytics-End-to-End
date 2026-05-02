@@ -8603,3 +8603,206 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+
+
+
+			/* ==========================
+   BLOCK 1: HERO SECTION 
+   ========================== */
+:root {
+    --text-color: #303030;
+    --accent-color: #E85915;
+    --open-sans: 'Open Sans', sans-serif;
+    --side-padding: 50px;
+}
+
+.container {
+    width: 1920px;
+    margin: 0 auto;
+    padding: 0 50px; /* Отступ 50px лево/право */
+}
+
+.hero-section {
+    padding-top: 50px;
+    margin-bottom: 150px; /* Отступ между блоками 150px */
+}
+
+.logo-wrapper {
+    margin-bottom: 60px;
+}
+
+.hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Текст слева, баннер справа */
+    gap: 50px;
+}
+
+.hero-text-content {
+    flex: 0 1 auto;
+}
+
+.hero-banner {
+    flex: 0 0 auto;
+}
+
+.banner-img {
+    width: 850px; /* Фиксированная ширина чертежа для десктопа */
+    height: auto;
+    display: block;
+
+}
+
+/* Стили вопросов (Текст #303030, Буллиты #E85915) */
+.hero-questions {
+    list-style: none;
+    padding: 0;
+}
+
+.question-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 35px;
+}
+
+.question-item .bullet {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 12px;
+    height: 12px;
+    background-color: #E85915;
+    border-radius: 50%;
+}
+
+.question-item strong {
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    color: #303030;
+}
+
+.question-item p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #303030;
+    margin-top: 5px;
+}
+
+
+/* START: BLOCK 2 (Tech Stack) */
+.tech-stack-section {
+    margin-bottom: 150px; /* Отступ между блоками 150px */
+}
+
+.block-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 700; /* Bold */
+    color: #303030;
+    margin-bottom: 40px; /* Отступ от заголовка до элементов 40px */
+    text-align: center; /* Центрируем заголовок для этого блока */
+}
+
+.tech-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px; /* Расстояние между колонками */
+}
+
+.tech-item {
+    flex: 1;
+    text-align: center;
+}
+
+.icon-box {
+    height: 80px; /* Высота контейнера для иконок */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tech-icon {
+    width: 60px; /* Размер иконки */
+    height: auto;
+}
+
+.tech-item h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 34px; /* H2 - 34 Px regular */
+    font-weight: 400;
+    color: #303030;
+    margin-bottom: 15px;
+}
+
+.tech-item p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px; /* p - 20 px regular */
+    font-weight: 400;
+    color: #303030;
+    line-height: 1.4;
+}
+/* END: BLOCK 2 (Tech Stack) */
+
+
+/* START: BLOCK 3 (Research Insights) */
+.research-section {
+    margin-bottom: 150px; /* Отступ между блоками 150px */
+}
+
+.insight-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 100px; /* Отступ между рядами инсайтов */
+}
+
+/* Шахматный порядок: переворачиваем четные ряды */
+.insight-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.insight-text {
+    flex: 1;
+}
+
+.insight-image {
+    flex: 1.2;
+}
+
+.insight-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Убираем рамку, если в XD её нет, или оставляем для четкости */
+    border: 1px solid #f0f0f0; 
+}
+
+/* Текстовые акценты */
+.accent-label {
+    color: #E85915; /* Accent text color */
+    font-weight: 700;
+}
+
+.accent-text {
+    color: #E85915;
+    font-weight: 700;
+}
+
+.insight-text h2 {
+    font-size: 34px; /* H2 - 34 Px */
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #303030;
+}
+
+.insight-text p {
+    font-size: 20px; /* p - 20 px */
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #303030;
+}
+/* END: BLOCK 3 (Research Insights) */
