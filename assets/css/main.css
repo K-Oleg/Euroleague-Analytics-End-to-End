@@ -25,16 +25,17 @@ body {
     margin: 0 auto;
     padding: 0 50px; /* Твои базовые 50px */
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 section {
     margin-bottom: 120px; /* Немного уменьшил для мобильных, ниже поправим */
 }
 
 /* Типографика (Адаптивная) */
-h1 { font-size: clamp(28px, 5vw, 40px); font-weight: 700; margin-bottom: 40px; }
-h2 { font-size: clamp(24px, 4vw, 34px); font-weight: 400; margin-bottom: 20px; }
-h3 { font-size: clamp(24px, 4vw, 30px); font-weight: 700; margin-bottom: 0px; }
-p { font-size: clamp(16px, 2vw, 20px); font-weight: 400; margin-top: 20px }
+h1 { font-size: clamp(28px, 5vw, 40px); font-family: Open Sans; font-weight: 700; margin-bottom: 40px; }
+h2 { font-size: clamp(24px, 4vw, 34px); font-family: Open Sans; font-weight: 400; margin-bottom: 20px; }
+h3 { font-size: clamp(24px, 4vw, 30px); font-family: Open Sans; font-weight: 700; margin-bottom: 0px; }
+p { font-size: clamp(16px, 2vw, 20px); font-family: Open Sans; font-weight: 400; margin-top: 20px }
 
 /* ==========================================================================
    2. БЛОК №1: HERO SECTION
