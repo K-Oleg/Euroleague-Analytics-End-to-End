@@ -267,9 +267,8 @@ text-align: center;
 
 
    @media (min-width: 1024px) {
-    .hero-banner_Mob {
-        display: none;
-    }
+    .hero-banner_Mob { display: none; }
+    .mobile-only { display: none;}
 
     
 }
@@ -285,8 +284,15 @@ text-align: center;
     .hero-banner_Mob img { max-width: 100%; height: auto; }    
     .main-logo { height: clamp(40px, 6vw, 50px); width: auto; }
     .insight-text { text-align: left !important; }
-    h1 { margin-bottom: 3%; }
+    h1 { margin-bottom: 5%; }
     .tech-stack-section { margin-bottom: 15%; }
+    .tech-item h2 { margin-bottom: 10px !important; }
+    .tech-item p { margin-top: 0px !important; }
+    .insight-row { margin-bottom: 10%; }
+    .key-insight-mobile { text-align: left; margin-top: 0px !important; padding-top: 0%; }
+    .key-insight-mobile p { margin-top: 0%; }
+    .insight-image img { margin: 0, auto, 0, auto; }
+    .desktop-only { display: none; }
     
 }
 
