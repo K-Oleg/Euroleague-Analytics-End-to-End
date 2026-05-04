@@ -163,7 +163,7 @@ text-align: center;
 /* ==========================================================================
    6. БЛОК №5: ABOUT THE AUTHOR
    ========================================================================== */
-.about-author-section { background-color: #EFEFEF; padding: clamp(50px, 8vw, 100px) 0; }
+.about-author-section { background-color: #EFEFEF; padding: clamp(50px, 8vw, 100px) 0; margin-bottom: 0px !important; }
 
 
 
