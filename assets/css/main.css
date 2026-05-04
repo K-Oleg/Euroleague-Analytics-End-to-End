@@ -33,20 +33,26 @@ section {
 /* Типографика (Адаптивная) */
 h1 { font-size: clamp(28px, 5vw, 40px); font-weight: 700; margin-bottom: 40px; }
 h2 { font-size: clamp(24px, 4vw, 34px); font-weight: 400; margin-bottom: 20px; }
-p { font-size: clamp(16px, 2vw, 20px); font-weight: 400; }
+h3 { font-size: clamp(24px, 4vw, 30px); font-weight: 700; margin-bottom: 0px; }
+p { font-size: clamp(16px, 2vw, 20px); font-weight: 400; margin-top: 20px }
 
 /* ==========================================================================
    2. БЛОК №1: HERO SECTION
    ========================================================================== */
-.hero-section { padding-top: 50px; }
+.hero-section { padding-top: 50px; margin-bottom: 5%;}
 .logo-wrapper { margin-bottom: clamp(30px, 5vw, 60px); }
-.main-logo { height: clamp(40px, 6vw, 61px); width: auto; }
+.main-logo { height: clamp(40px, 6vw, 40px); width: auto; }
 
 .hero-flex {
     display: flex;
     align-items: center;
     gap: 40px;
 }
+
+.hero-flex h1{
+    margin-bottom: 0px;
+}
+
 
 .hero-text-content { flex: 1; }
 
@@ -75,19 +81,35 @@ p { font-size: clamp(16px, 2vw, 20px); font-weight: 400; }
 /* ==========================================================================
    3. БЛОК №2: TECH STACK
    ========================================================================== */
-.tech-grid {
+.tech-stack-section{ 
+    margin-bottom: 5%;
+ }
+
+   .tech-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Авто-колонки */
     gap: 40px;
 }
 
-.icon-box { height: 60px; margin-bottom: 20px; display: flex; align-items: center; }
+.tech-stack-section h1 {
+text-align: center;
+}
+
+.tech-item {text-align: center;}
+.icon-box { height: 60px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center;}
 .tech-icon { height: 100%; width: auto; }
+
+
+
 
 /* ==========================================================================
    4. БЛОК №3: RESEARCH INSIGHTS (ШАХМАТКА)
    ========================================================================== */
-.insight-row {
+.block-title{ 
+    text-align: center; 
+}
+
+   .insight-row {
     display: flex;
     align-items: center;
     gap: clamp(40px, 8vw, 100px);
@@ -103,39 +125,174 @@ p { font-size: clamp(16px, 2vw, 20px); font-weight: 400; }
 /* ==========================================================================
    5. БЛОК №4: EXECUTIVE SUMMARY
    ========================================================================== */
-.summary-item { display: flex; justify-content: space-between; padding: 25px 0; gap: 30px; }
+
+.summary-section{ margin-bottom: 5%; }
+
+ 
 .summary-q { flex: 1; position: relative; padding-left: 30px; }
 .summary-q .dot {
     position: absolute; left: 0; top: 8px;
     width: 10px; height: 10px;
     background-color: #E85915; border-radius: 50%;
 }
-.summary-a { flex: 1.2; }
+
 .accent-divider { width: 100%; border-top: 1px solid #E85915; margin: 0 auto; opacity: 0.3; }
+
+
+.summary-item { 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 25px 0; 
+    gap: 0; /* Убираем gap, чтобы он не добавлял лишние пиксели к 100% ширины */
+}
+
+.summary-q { 
+    flex: 0 0 50%; /* Занимает ровно 50% и не меняет размер */
+    position: relative; 
+    padding-left: 30px; 
+    box-sizing: border-box; /* Важно, чтобы padding не расширял блок */
+}
+
+.summary-a { 
+    flex: 0 0 50%; /* Занимает ровно 50% и не меняет размер */
+    padding-left: 50px; /* Небольшой отступ, чтобы текст ответа не слипался с вопросом */
+    box-sizing: border-box; 
+}
 
 /* ==========================================================================
    6. БЛОК №5: ABOUT THE AUTHOR
    ========================================================================== */
 .about-author-section { background-color: #EFEFEF; padding: clamp(50px, 8vw, 100px) 0; }
-.about-container { display: flex; flex-direction: column; align-items: center; text-align: center; }
-.about-quote { max-width: 800px; font-size: clamp(18px, 2.5vw, 24px); margin-bottom: 40px; }
-.author-name { font-size: clamp(24px, 4vw, 34px); }
-.author-line { width: 100%; height: 3px; background-color: #E85915; }
+
+
+
+.about-container { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: stretch; /* Позволяет дочерним блокам растягиваться */
+    text-align: left; 
+}
+
+.about-quote { 
+    max-width: 800px; 
+    font-size: clamp(18px, 2.5vw, 24px); 
+    margin-bottom: 40px; 
+    align-self: flex-start; /* Сдвигает саму цитату влево */
+    text-align: left; 
+}
+
+.author-info {
+    align-self: flex-end; /* Сдвигает весь блок с именем вправо */
+    text-align: right;    /* Выравнивает текст внутри блока по правому краю */
+    min-width: 5%;     /* Можно задать ширину, чтобы линия не была на весь экран */
+    max-width: fit-content;
+}
+
+.author-name { 
+    font-size: clamp(24px, 4vw, 34px); 
+    margin-bottom: 5px;
+}
+
+.author-line { 
+    width: 100%; 
+    height: 3px; 
+    background-color: #E85915; 
+    
+}
+
+
+/* 1. Стили для оверлея (темный фон) */
+.overlay {
+    position: fixed; /* Фиксировано на экране */
+    display: none; /* Скрыто по умолчанию */
+    z-index: 1000; /* Поверх всех элементов (включая Dreamweaver) */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Черный фон с прозрачностью 90% */
+    cursor: pointer; /* Курсор при наведении на фон */
+}
+
+/* 2. Стили для самого увеличенного изображения */
+.overlay-content {
+    display: block;
+    max-width: 90%; /* Не шире 90% экрана */
+    max-height: 90%; /* Не выше 90% экрана */
+    margin: auto; /* Центрирование */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Центрирование и сжатие для анимации */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease; /* Плавная анимация увеличения */
+}
+
+/* Класс, который добавляет JavaScript для открытия */
+.overlay.open .overlay-content {
+    transform: translate(-50%, -50%) scale(1); /* Возвращение к нормальному размеру */
+}
+
+/* 3. Кнопка закрытия (крестик) */
+.close-overlay {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 60px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close-overlay:hover {
+    color: #E85915; /* Ваш брендовый оранжевый цвет при наведении */
+}
+
+/* Небольшое улучшение для основного изображения, чтобы пользователь понимал, что на него можно кликнуть */
+.insight-image img {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.insight-image img:hover {
+    opacity: 0.8;
+}
 
 /* ==========================================================================
    7. MEDIA QUERIES (АДАПТИВ ПОД ПЛАНШЕТЫ И ТЕЛЕФОНЫ)
    ========================================================================== */
-@media (max-width: 1024px) {
+
+
+   @media (min-width: 1024px) {
+    .hero-banner_Mob {
+        display: none;
+    }
+
+    
+}
+
+   @media (max-width: 1024px) {
     .container { padding: 0 30px; }
     .hero-flex, .insight-row, .insight-row.reverse { flex-direction: column; text-align: center; }
-    .hero-banner { margin-right: 0; width: 100%; }
+    .hero-banner { display: none; }
     .banner-img { margin: 0 auto; }
     .question-item { text-align: left; }
     .summary-item { flex-direction: column; gap: 10px; }
+    .hero-banner_Mob { display: block;}
+    .hero-banner_Mob img { max-width: 100%; height: auto; }    
+    .main-logo { height: clamp(40px, 6vw, 50px); width: auto; }
+    .insight-text { text-align: left !important; }
+    h1 { margin-bottom: 3%; }
+    .tech-stack-section { margin-bottom: 15%; }
+    
 }
 
 @media (max-width: 480px) {
     section { margin-bottom: 80px; }
     .container { padding: 0 20px; }
     .about-quote::before { display: none; }
+    .hero-banner_Mob { width: 100%; text-align: center; margin-right: 0px; margin-left: 0px; }
 }
