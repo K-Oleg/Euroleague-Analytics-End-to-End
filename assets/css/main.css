@@ -284,7 +284,7 @@ text-align: center;
     .hero-banner_Mob img { max-width: 100%; height: auto; }    
     .main-logo { height: clamp(40px, 6vw, 50px); width: auto; }
     .insight-text { text-align: left !important; }
-    .tech-stack-section, .hero-section { margin-bottom: 30%; }
+    .tech-stack-section, .hero-section, .research-section { margin-bottom: 30%; }
     .tech-item h2 { margin-bottom: 10px !important; }
     .tech-item p { margin-top: 0px !important; }
     .insight-row { margin-bottom: 10%; }
@@ -293,10 +293,12 @@ text-align: center;
     .insight-image img { margin: 0, auto, 0, auto; }
     .desktop-only { display: none; }
     .summary-a  { padding-left: 30px; }
-    h1 { font-size: clamp(28px, 5vw, 34px); font-weight: 700; margin-bottom: 5%; }
-    h2 { font-size: clamp(24px, 4vw, 28px); font-weight: 400; margin-bottom: 20px; }
-    h3 { font-size: clamp(24px, 4vw, 24px); font-weight: 700; margin-bottom: 0px; }
-    p { font-size: clamp(16px, 2vw, 16px); font-weight: 400; margin-top: 20px }
+    h1 { font-size: clamp(28px, 5vw, 34px) !important; font-weight: 700; margin-bottom: 5%; }
+    h2 { font-size: clamp(20px, 4vw, 28px) !important; font-weight: 400; margin-bottom: 20px; }
+    h3 { font-size: clamp(20px, 4vw, 24px) !important; font-weight: 700; margin-bottom: 0px; }
+    p { font-size: clamp(16px, 2vw, 16px) !important; font-weight: 400; margin-top: 20px }
+    .hero-text-content h1 { font-size: clamp(26px, 5vw, 34px) !important; line-height: 1.3; font-weight: 700; margin-bottom: 1%; }
+    .hero-banner_Mob { margin-bottom: 30px; }
     
 }
 
