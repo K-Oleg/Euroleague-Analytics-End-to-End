@@ -285,7 +285,7 @@ text-align: center;
     .main-logo { height: clamp(40px, 6vw, 50px); width: auto; }
     .insight-text { text-align: left !important; }
     h1 { margin-bottom: 5%; }
-    .tech-stack-section { margin-bottom: 15%; }
+    .tech-stack-section, .hero-section { margin-bottom: 30%; }
     .tech-item h2 { margin-bottom: 10px !important; }
     .tech-item p { margin-top: 0px !important; }
     .insight-row { margin-bottom: 10%; }
@@ -293,6 +293,7 @@ text-align: center;
     .key-insight-mobile p { margin-top: 0%; }
     .insight-image img { margin: 0, auto, 0, auto; }
     .desktop-only { display: none; }
+    .summary-a  { padding-left: 30px; }
     
 }
 
